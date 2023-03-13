@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 150;
+    list-style: none;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    font-family: 'Tilt Prism', cursive;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    box-shadow: 0 0 2px 2px gray;
+}
+.navicon ul{
+    display: flex;
+    gap: 25px;
+}
+.navicon li i{
+    font-size: 1em;
+    font-weight: 500;
+    color: white;
+}
+.navicon li i:hover{
+    color: black;
+}
+.nav-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navimg h1{
+    font-size: 1.5em;
+    font-weight: 900;
+    color: white;
+}
+/* .navlist ul {
+    display: flex;
+    gap: 25px;
+} */
+.navlist li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-weight: 900;
+}
+.navimg h1:hover{
+    padding: 20px ;
+    background-color: rgb(35, 35, 35);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow:0 0 3px 1px gray ;
+}
+.navlist li a:hover{
+    padding: 10px;
+    background-color: black;
+    font-weight: 900;
+    border-radius: 30px;
+}
+main{
+    font-family: 'Golos Text', sans-serif;
+    padding: 15px ;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(1,auto);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: orange;
+    margin-top: 5px;
+}
+.img-content-main{
+    padding: 10px;
+}
+.img-content-main img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.teks-content{
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+/* .teks-content h3{
+    font-size: 1.6em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.teks-content p{
+    font-size: .9em;
+    font-weight: 250;
+    text-transform: capitalize;
+} */
+.list-menu{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(110px,250px));
+    justify-content: center;
+    align-items: center;
+    grid-gap:10px;
+    padding: 20px;
+    padding-bottom: 30px;
+    background-color: orange;
+}
+.about-menu{
+    padding: 0 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    background-color: white;
+    box-shadow: 0 0 5px 1px gray;
+}
+.about-menu img{
+    object-fit: cover;
+    display: inline-block;
+    width: 250px;
+    height: 120px; 
+}
+.about-menu h3{
+    font-size: 1.25em;
+    font-weight: 900;
+}
+.about-menu p{
+    font-size: .8em;
+    font-weight: 250px;
+}
+aside{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+}
+.list-patners{
+    width: 80%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill,minmax(110px,200px));
+    grid-gap: 15px;
+}
+.list-patners img{
+    border-radius: 5px;
+    display: inline-block;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+footer{
+    padding: 50px 15px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+}
+.main-footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(100px,220px));
+    grid-gap:5px;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+.list-menu-kedua,.list-about,.list-icon,.list-number{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    /* border: 1px solid black; */
+}
+.list-about{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.list-about h3{
+    font-size: 1.5em;
+    font-weight: 900;
+}
+.list-about p{
+    font-size: .9em;
+    font-weight: 200;
+}
+.list-about p:nth-child(3){
+    font-weight: 800;
+}
+.list-icon ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: white;
+}
+.list-menu-kedua ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.list-menu-kedua li a{
+    text-decoration: none;
+    color: white;
+}
+.list-number ul{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    color: white;
+}
+.teks h1{
+    font-size: 1em;
+    font-weight: 700;
+    color: red;
+}
+    .navlist ul{
+        display:none;
+    }
+    .toggle{ 
+        position: absolute;
+        top: 45px;
+        right: 20px;
+        display: inline-block;
+        font-size: 1.5em;
+        font-weight: 800;
+        cursor: pointer;
+    }
+    .teks-content h3{
+        font-size: 1em;
+    }
+    .teks-content p{
+        font-size: .6em;
+    }
+@media only screen and (max-width:400px){
+    .navlist ul{
+        display:none;
+    }
+    .toggle{ 
+        position: absolute;
+        top: 45px;
+        right: 20px;
+        display: inline-block;
+        font-size: 1.5em;
+        font-weight: 800;
+        cursor: pointer;
+    }
+    .teks-content h3{
+        font-size: 1em;
+    }
+    .teks-content p{
+        font-size: .6em;
+    }
+} 
+@media only screen and (min-width:400px){
+    .toggle{ 
+        display: none;
+    }
+    .navlist ul {
+        display: flex;
+        gap: 25px;
+    }
+    .teks-content h3{
+        font-size: 1.6em;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    .teks-content p{
+        font-size: .9em;
+        font-weight: 250;
+        text-transform: capitalize;
+    } 
+}
